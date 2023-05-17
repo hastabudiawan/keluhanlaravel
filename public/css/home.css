@@ -1,0 +1,145 @@
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Background */
+.bg-qadr {
+    background-color: #009444 !important;
+}
+
+/* Form */
+.form {
+    min-height: 100vh;
+}
+
+/* Rating */
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    display: none;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rated:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+.star-rating-complete {
+    color: #c59b08;
+}
+
+.rating-container .form-control:hover,
+.rating-container .form-control:focus {
+    background: #fff;
+    border: 1px solid #ced4da;
+}
+
+.rating-container textarea:focus,
+.rating-container input:focus {
+    color: #000;
+}
+
+.rated {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.rated:not(:checked)>input {
+    position: absolute;
+    display: none;
+}
+
+.rated:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ffc700;
+}
+
+.rated:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rated>input:checked~label {
+    color: #ffc700;
+}
+
+.rated:not(:checked)>label:hover,
+.rated:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+/* header */
+.contact-icon {
+    font-size: 30px;
+}
+
+.link-header {
+    padding-right: 30px;
+}
+
+/* Responsive Header */
+@media screen and (max-width: 768px) {
+    .contact-link {
+        display: none;
+    }
+
+    .link-header {
+        padding: 0;
+    }    
+
+    .contact-icon {
+        padding: 15px;
+    }
+    
+    .contact-icon:hover {
+        background-color: white;
+        color: #009444;
+    }
+}
